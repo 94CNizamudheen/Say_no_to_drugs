@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
+    <style>
+    .stats-row {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+    }
+    
+    .stats-row::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for cleaner look */
+    }
+    
+    .stats-item {
+        flex: 0 0 auto;
+        text-align: center;
+        min-width: 150px; /* Adjust based on content */
+    }
+    </style>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-section animate__animated animate__fadeInDown">
@@ -78,10 +96,10 @@
     </section>
 
     <!-- Statistics Section -->
-    <section id="statistics" class="stats-section py-5">
+   <section id="statistics" class="stats-section py-5">
         <div class="container">
             <h2 class="section-title text-center mb-5 animate__animated animate__fadeInDown">Our Impact</h2>
-            <div class="row stats-row">
+            <div class="row stats-row flex-nowrap overflow-auto">
                 <div class="col-md-3 col-6 mb-4">
                     <div class="stats-item animate__animated animate__fadeIn" style="--stats-delay: 0s;" aria-label="Over 20 million people helped">
                         <i class="fas fa-users fa-3x mb-3"></i>
@@ -113,6 +131,7 @@
             </div>
         </div>
     </section>
+
 
 
     <section id="resources" class="resources-section py-5">
