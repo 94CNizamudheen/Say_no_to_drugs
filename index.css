@@ -22,7 +22,7 @@
 }
 
 .hero-section {
-    background: linear-gradient(var(--overlay-color), var(--overlay-color)), url('/images/substance-abuse.webp') no-repeat center center/cover;
+    background: linear-gradient(var(--overlay-color), var(--overlay-color)), url('images/substance-abuse.webp') no-repeat center center/cover;
     background-attachment: fixed;
     /* Parallax effect */
     color: var(--text-color);
